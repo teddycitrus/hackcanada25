@@ -11,8 +11,6 @@ export const config = {
   },
 };
 
-const openaiKey ="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";
-
 const transcribeAudio = async (filePath) => {
   const formData = new FormData();
   formData.append("file", fs.createReadStream(filePath));
